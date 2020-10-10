@@ -23,6 +23,15 @@ after_success:
     - docker push luizloja/complex-server
     - docker push luizloja/complex-worker
 
+    deploy:
+        edge: true
+        provider: elasticbeanstalk
+        region: us-east-2
+        app: complex
+        env: Complex-env
+        bucket_name: elasticbeanstalk-us-east-2-682739895742
+        bucket_path: complex
+
 
 
        
