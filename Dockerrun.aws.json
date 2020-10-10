@@ -12,13 +12,13 @@
             "image":"luizloja/complex-server",
             "hostname":"api",
             "essential": false,
-            "memory": 64
+            "memory": 128
         },{
             "name":"worker",
             "image":"luizloja/complex-worker",
             "hostname":"worker",
             "essential": false,
-            "memory": 64
+            "memory": 128
         },{
             "name":"nginx",
             "image": "luizloja/complex-nginx",
