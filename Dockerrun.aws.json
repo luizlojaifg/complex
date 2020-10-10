@@ -6,19 +6,19 @@
             "image": "luizloja/complex-client",
             "hostname":"client",
             "essential": false,
-            "memory": 128
+            "memory": 256
         },{
             "name":"server",
             "image":"luizloja/complex-server",
             "hostname":"api",
             "essential": false,
-            "memory": 128
+            "memory": 256
         },{
             "name":"worker",
             "image":"luizloja/complex-worker",
             "hostname":"worker",
             "essential": false,
-            "memory": 128
+            "memory": 256
         },{
             "name":"nginx",
             "image": "luizloja/complex-nginx",
@@ -31,7 +31,7 @@
                 }
             ],
             "links": ["client","server"],
-            "memory": 128
+            "memory": 256
 
         }
     ]
